@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body{
+      background-color: #eee;
+    }
+    h1,h2,p,ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    #business-card{
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+      box-shadow:inset -1px -1px 5px 5px rgb(204, 200, 200);
+      padding: 20px;
+    }
+    #business-card .name{
+      border-right: 2px solid white; 
+      margin-top: 40px;
+      padding: 10px;
+      float: left;
+      width: 140px;
+      text-align: right;
+    }
+    #business-card .info{
+      margin-top: 40px;      
+      float: right;
+      text-align: left; 
+      width: 230px;  
+    }
+    #business-card .name h1{
+        color:aliceblue;
+        font-weight: 200;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #business-card .name h2{
+        color:#B19661;
+        font-variant-caps:all-petite-caps;
+        font-size: 33px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        margin-top: -10px;
+    }
+    #business-card .name small{
+        color:#888888;
+    }
+
+    #business-card .info p{
+        color:#FFFFFF; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #business-card .info li{
+        color:#888888;
+        font-size: 14px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    #business-card .info li:before{
+        color:darkgray;
+        content: url(http://icons.iconarchive.com/icons/pelfusion/long-shadow-ios7/16/Messages-2-icon.png);
+    }
+    #business-card .info li:first-of-type:before{
+        content: url(http://icons.iconarchive.com/icons/pelfusion/long-shadow-ios7/16/Phone-icon.png);
+    }
+    #business-card .info li:last-of-type:before{
+        content: url(http://icons.iconarchive.com/icons/tatice/operating-systems/16/Globe-icon.png);
+    }
+
+  </style>
+</head>
+<body>
+  <div id="business-card">
+
+    <div class="name">
+      <h1>Firstname</h1>
+      <h2>Lastname</h2>
+      <small>web designer &#47; developer</small>
+    </div>
+    <div class="info">
+      <p>12345 Some Street, City<br>State, Province, Country</p>
+       <ul>
+         <li>+00 22 333444</li>
+         <li>email@somemail.example</li>
+         <li>www.exampledomain.example</li>
+       </ul>
+    </div>
+
+  </div>
+</body>
+</html>
